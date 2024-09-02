@@ -3,7 +3,6 @@ import os
 import time
 from RedDownloader import RedDownloader as rd
 from moviepy.editor import *
-#from upload import uploadVideo
 
 class Video:
     def __init__(self, subreddit,maxduration, minupvotes):
@@ -52,7 +51,6 @@ class Video:
         video = concatenate(self.videos, method="compose").resize( (1080,1920) )
         video.write_videofile('video.mp4', fps=24)
         description = open("description.txt", "r")
-        #uploadVideo('video.mp4', 'memes i stole from discord', description.read(), 20, ['ylyl', 'you laugh you lose', 'discord memes', 'memes', 'discord'], 'public', False, False)
 
     def setup(self):
         dir = 'video'
