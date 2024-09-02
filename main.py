@@ -63,5 +63,3 @@ class Video:
         self.videos.append(intro)
         self.currentduration += intro.duration
         self.downloadVideo()
-
-Video("discordVideos", 15, 75)
